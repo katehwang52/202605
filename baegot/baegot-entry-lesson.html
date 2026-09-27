@@ -740,6 +740,26 @@
   </main>
 
   <script>
+    const lessonSlides = document.querySelectorAll(".slide");
+
+    lessonSlides[3].querySelector(".goal:first-child").innerHTML =
+      "<span>1</span>&#50644;&#53944;&#47532;&#44032; &#47924;&#50631;&#51064;&#51648; &#50508;&#50500;&#48372;&#44592;";
+
+    const ruleTexts = lessonSlides[6].querySelectorAll(".rule span");
+    ruleTexts[0].innerHTML = "&#49440;&#49373;&#45784; &#54868;&#47732;&#51012; &#48380; &#46412;&#45716; &#47560;&#50864;&#49828;&#50752; &#53412;&#48372;&#46300;&#50640;&#49436; &#49552; &#46524;&#44592;";
+    ruleTexts[1].innerHTML = "&#51096; &#50504; &#46112; &#46412;&#45716; &#51312;&#50857;&#55176; &#49552; &#46308;&#44256; &#44592;&#45796;&#47532;&#44592;";
+    ruleTexts[2].innerHTML = "&#47676;&#51200; &#45149;&#45212; &#52828;&#44396;&#45716; &#50694; &#52828;&#44396; &#46020;&#50752;&#51452;&#44592;";
+
+    lessonSlides[7].querySelector("h2").innerHTML = "&#49440;&#49373;&#45784; &#54868;&#47732;&#51012; &#48372;&#49464;&#50836;";
+    lessonSlides[7].querySelector("p").innerHTML = "&#50644;&#53944;&#47532;&#44032; &#47924;&#50631;&#51012; &#54616;&#45716; &#44275;&#51064;&#51648; &#49440;&#49373;&#45784;&#51060; &#51687;&#44172; &#48372;&#50668;&#51460;&#44172;&#50836;.";
+    lessonSlides[7].querySelector("img").src = "./entry-teacher-demo.png";
+    lessonSlides[7].querySelector("img").alt = "Entry learning start screen";
+
+    lessonSlides[8].querySelector("h2").innerHTML = "&#51060;&#51228; &#50644;&#53944;&#47532; &#54532;&#47196;&#44536;&#47016;&#51012; &#50676;&#50612;&#50836;";
+    lessonSlides[8].querySelector("p").innerHTML = "&#51064;&#53552;&#45367; &#52285;&#51008; &#50676;&#51648; &#50506;&#50500;&#50836;. &#52293;&#49345;&#50640; &#51080;&#45716; &#50644;&#53944;&#47532; &#54532;&#47196;&#44536;&#47016;&#51012; &#50676;&#44256;, &#51060; &#54868;&#47732;&#51060; &#48372;&#51060;&#47732; &#49552;&#51012; &#xB5BC;&#44256; &#44592;&#45796;&#47140;&#50836;.";
+    lessonSlides[8].querySelector("img").src = "./codex-clipboard-2c76d29b-3528-4596-ab29-949640f08737.png";
+    lessonSlides[8].querySelector("img").alt = "Entry program workspace";
+
     const slides = Array.from(document.querySelectorAll(".slide"));
     const prev = document.getElementById("prev");
     const next = document.getElementById("next");
